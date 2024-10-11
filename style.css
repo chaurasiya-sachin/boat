@@ -394,6 +394,181 @@ input[type="radio"]:checked + .navigation label {
     color: rgb(45, 173, 7);
     margin-left: -20px;
 }
+/* middle section */
+
+
+
+
+.shop-by-categories{
+    margin-top: 30px;
+}
+
+.cat-head{
+    display: flex;
+    &>span{
+        color: red;
+        text-decoration: underline;
+    }
+    flex-wrap: wrap;
+}
+
+.categories{
+    
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card-cont{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    & > a{
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.cat-card{
+    width: 120px;
+}
+
+.cat-cont{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bestsellers{
+margin-top: 30px;
+
+}
+
+.bs-head{
+    display: flex;
+    flex-wrap: wrap;
+    &>span{
+        color: red;
+        text-decoration: underline;
+    }
+   
+    
+}
+
+.bs{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.bs-cont{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.bs-card-cont{
+    margin-bottom: 50px;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+   & > video{
+     width: 90%;
+     border-radius: 10px;
+     cursor: pointer;
+   }
+  
+    & > a{
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+   
+}
+
+
+.lifestyle{
+    margin-top: 30px;
+    
+}
+
+.ls{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.ls-head{
+    display: flex;
+    flex-wrap: wrap;
+    &>span{
+        color: red;
+        text-decoration: underline;
+    }
+   
+    
+}
+
+.ls-cont{
+    display: flex;
+    gap: 20px;
+
+    
+}
+
+.ls-card-cont{
+    margin-bottom: 50px;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+   & > img{
+     width: 90%;
+     border-radius: 10px;
+     cursor: pointer;
+   }
+  
+    & > a{
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+   
+}
+
+
+
 
 
 
