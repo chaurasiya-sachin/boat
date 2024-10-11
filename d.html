@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Advancing Image Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider {
+            position: relative;
+            max-width: 600px; /* Set slider width */
+            margin: auto;
+            overflow: hidden; /* Hide overflow */
+            border: 2px solid #3498db; /* Optional: border around the slider */
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+
+        .slides {
+            display: flex;
+            animation: slide 12s infinite; /* Adjust duration for timing */
+        }
+
+        .slide {
+            min-width: 100%; /* Make each slide full width */
+        }
+
+        .slide img {
+            width: 100%; /* Responsive images */
+            display: block;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33.33% { transform: translateX(0); }
+            36.66% { transform: translateX(-100%); }
+            69.99% { transform: translateX(-100%); }
+            73.32% { transform: translateX(-200%); }
+            100% { transform: translateX(-200%); }
+        }
+
+        .navigation {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .navigation label {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        /* Styling for manual navigation (optional) */
+        input[type="radio"]:checked + .navigation label {
+            background: #3498db; /* Active indicator */
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide" id="s1">
+                <img src="https://via.placeholder.com/600x300/FF5733/FFFFFF?text=Slide+1" alt="Slide 1">
+            </div>
+            <div class="slide" id="s2">
+                <img src="https://via.placeholder.com/600x300/33FF57/FFFFFF?text=Slide+2" alt="Slide 2">
+            </div>
+            <div class="slide" id="s3">
+                <img src="https://via.placeholder.com/600x300/3357FF/FFFFFF?text=Slide+3" alt="Slide 3">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+        </div>
+    </div>
+</body>
+</html>
